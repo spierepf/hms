@@ -11,8 +11,8 @@ class PersonSpec extends Specification implements DomainUnitTest<Person> {
     def cleanup() {
     }
 
-    // void "test something"() {
-    //     expect:"fix me"
-    //         true == false
-    // }
+    void "test User extends Person"() {
+        expect:"User extends Person"
+            new User() instanceof Person
+    }
 }
